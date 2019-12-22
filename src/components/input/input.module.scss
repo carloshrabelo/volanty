@@ -1,0 +1,26 @@
+.input {
+  margin-bottom: 1rem;
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  + label {
+    position: relative;
+    margin-top: -2.75rem;
+    margin-bottom: 1.75rem;
+    width: fit-content;
+    background: #fff;
+    margin-left: 0.5rem;
+    padding: 0;
+    text-transform: capitalize;
+    transition: 0.3s ease-in;
+  }
+
+  &:not(:placeholder-shown) + label {
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+    width: fit-content;
+    padding: 0 0.5rem;
+  }
+}
